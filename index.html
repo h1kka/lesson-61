@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Voprosi</title>
+	<style type="text/css">
+		.dom {
+			width: 900px;
+			background: blue;
+			margin-left: auto;
+			margin-right: auto;
+			border-radius: 10px;
+		}
+		.vopros {
+			height: 100px;
+			width: 900px;
+			background: green;
+			border-radius: 10px;
+		}
+		.vopros2 {
+			height: 100px;
+			width: 900px;
+			background: yellow;
+			border-radius: 10px;
+		}
+		.vopros3 {
+			height: 100px;
+			width: 900px;
+			background: orange;
+			border-radius: 10px;
+		}
+		.dom1 {
+			width: 900px;
+			background: blue;
+			display: none;
+			margin-left: auto; 
+			margin-right: auto;
+			border-radius: 10px;
+		}
+		.vopros4 {
+			height: 100px;
+			width: 900px;
+			background: green;
+			border-radius: 10px;
+		}
+		.vopros5 {
+			height: 100px;
+			width: 900px;
+			background: yellow;
+			border-radius: 10px;
+		}
+		.vopros6 {
+			height: 100px;
+			width: 900px;
+			background: orange;
+			border-radius: 10px;
+		}
+		.dom2 {
+			width: 900px;
+			background: blue;
+			display: none;
+			margin-left: auto;
+			margin-right: auto;
+			border-radius: 10px;
+		}
+		.vopros7{
+			height: 100px;
+			width: 900px;
+			background: green;
+			border-radius: 10px;
+		}
+		.vopros8 {
+			height: 100px;
+			width: 900px;
+			background: yellow;
+			border-radius: 10px;
+		}
+		.vopros9 {
+			height: 100px;
+			width: 900px;
+			background: orange;
+			border-radius: 10px;
+		}
+        .priz {
+        	width: 600px;
+			margin-left: auto;
+			margin-right: auto;
+			display: none;
+        }
+	</style>
+</head>
+<body>
+
+	
+	<div class="dom">
+		<p style="font-family: bold; font-size: 25px;">Вопрос 1. 2+2*2=x</p>
+		<div class="vopros">
+			<p style="font-family: bold; font-size: 20px;">1) x=6</p>
+		</div>
+		<div class="vopros2">
+			<p style="font-family: bold; font-size: 20px;">2) x=8 </p>
+		</div>
+		<div class="vopros3">
+			<p style="font-family: bold; font-size: 20px;">3) x=9</p>
+		</div>
+	</div>
+
+	<div class="dom1">
+		<p style="font-family: bold; font-size: 25px;">Вопрос 2. У какой из этих стран площадь больше?</p>
+		<div class="vopros4">
+			<p style="font-family: bold; font-size: 20px;">1) Лихтештейн</p>
+		</div>
+		<div class="vopros5">
+			<p style="font-family: bold; font-size: 20px;">2) Люксембург</p>
+		</div>
+		<div class="vopros6">
+			<p style="font-family: bold; font-size: 20px;">3) Сан-марино</p>
+		</div>
+	</div>
+ 
+	<div class="dom2">
+		<p style="font-family: bold; font-size: 25px;">Вопрос 3. Топ аниме?</p>
+		<div class="vopros7">
+			<p style="font-family: bold; font-size: 20px;">1) Ван пис</p>
+		</div>
+		<div class="vopros8">
+			<p style="font-family: bold; font-size: 20px;">2) САО</p>
+		</div>
+		<div class="vopros9">
+			<p style="font-family: bold; font-size: 20px;">3) Атака титанов</p>
+		</div>
+	</div>
+
+	<div class="priz">
+		молодец
+		<img src="priz.jpg" style="">
+	</div>
+
+<script type="text/javascript">
+
+	document.querySelector('.vopros').onclick = function() {
+		alert('верно');
+		document.querySelector('.dom1').style.display = "block";
+		document.querySelector('.dom').style.display = "none";
+	}
+	document.querySelector('.vopros2').onclick = function() {
+		alert('неверно');
+	}
+	document.querySelector('.vopros3').onclick = function() {
+		alert('неверно');
+	}
+	document.querySelector('.vopros4').onclick = function() {
+		alert('неверно');
+	}
+	document.querySelector('.vopros5').onclick = function() {
+		alert('верно');
+		document.querySelector('.dom2').style.display = "block";
+		document.querySelector('.dom1').style.display = "none";
+	}
+	document.querySelector('.vopros6').onclick = function() {
+		alert('неверно');
+	}
+	document.querySelector('.vopros7').onclick = function() {
+		alert('верно');
+    	document.querySelector('.dom2').style.display = "none";
+    	document.querySelector('.priz').style.display = "block";
+	}
+	document.querySelector('.vopros8').onclick = function() {
+		alert('неверно');
+	}
+	document.querySelector('.vopros9').onclick = function() {
+		alert('неверно');
+	}
+</script>
+</body>
+</html>
